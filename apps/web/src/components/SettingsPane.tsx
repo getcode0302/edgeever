@@ -190,7 +190,7 @@ export const SettingsPane = ({
   const activeTab = selectedTab ?? "general";
   const activeMobileTab = selectedTab;
 
-  const mobileTabItems = tabItems.filter((item) => item.key !== "shortcuts" || import.meta.env.DEV);
+  const mobileTabItems = tabItems.filter((item) => item.key !== "shortcuts");
 
   const handleBack = () => {
     if (window.matchMedia("(max-width: 1023px)").matches && activeMobileTab !== null) {
